@@ -1,0 +1,43 @@
+{
+  "reviewer": "/root/genlayer_contract_pair02",
+  "recorded_by": "/root/genlayer_projects05",
+  "status": "independent_source_review_closed_after_fix",
+  "remaining_important_or_critical_findings": 0,
+  "author_does_not_claim_to_be_independent_reviewer": true,
+  "basis": "Direct reviewer collaboration closeout, read-only complete source/test evidence plus independently executed actual SDK/pure frontend narrow Unicode reproduction and complete archive byte verification",
+  "full_suites_rerun_by_reviewer": false,
+  "network_ui_or_chain_actions": false,
+  "final_docs_only_reseal_reason": "Record peer result, explicit AI-assisted prototype disclosure and nonblocking limitations; contract/frontend/fixture source unchanged",
+  "final_archive_narrow_review": "pending",
+  "minor_disclosures": [
+    "Vite actual SDK JS chunk >500kB.",
+    "Browser pending guard does not survive storage clearing or coordinate unrelated sessions; manual original hash attach does not reconstruct calldata.",
+    "The revoke reason UI counts UTF16 units/maxlength200 while the contract accepts200 Unicode codepoints; some101..200 non-BMP reason strings require a shorter reason in the UI. Valid shorter reasons permit normal revocation."
+  ],
+  "declined_to_judge": [
+    "Browser visual quality or real wallet UI flow",
+    "Public fixture availability/publisher truth, contract deployment/hosting, gas or real multi-validator/business execution",
+    "Real users, identities, jobs, infrastructure execution, financing or awards"
+  ],
+  "deployment": null,
+  "publication": null,
+  "hosting": null,
+  "live_business_flow": null,
+  "project": "ChangeCascade",
+  "reviewed_contract_sha256": "ab862b7423adc1211efcba6fef6ea5c937b424e5eb9ff3baa642a6e8c691c0ef",
+  "reviewed_frontend_source_tree_sha256": "c0130b35eedc2e62dac065f196896d47404cac081b69d47ada154dc2e50d46c8",
+  "reviewed_source_snapshot_sha256": "4be05053c4d44813485c57f8485c59bf1bd2d8df5a8f5cad83290c8dcfc0f581",
+  "reviewed_candidate_zip": {
+    "path": "change-cascade-publish.zip",
+    "bytes": 96766,
+    "sha256": "1f12ea2fa45ae60a628fe2974e3073d52362414e234b65b9290c6e70911add7c",
+    "crc_verified": true,
+    "all_entry_sha256_verified": true
+  },
+  "fix": {
+    "P2": "Valid Unicode label interoperabilty",
+    "status": "closed",
+    "evidence": "unicode-peer-fix.json",
+    "contract_and_all_fixtures_changed": false
+  }
+}

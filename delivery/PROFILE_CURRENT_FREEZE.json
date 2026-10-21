@@ -1,0 +1,50 @@
+{
+  "profile": "profile08",
+  "scope": "Projects only; bundled contract sources are not extra IC contributions",
+  "review_status": "closed_final_metadata_reseal_verified",
+  "deployment": null,
+  "publication": null,
+  "hosting": null,
+  "live_wallet_business_flow": null,
+  "browser_visual_review": null,
+  "packages": [
+    {
+      "title": "ChangeCascade",
+      "path": "change-cascade",
+      "contract_sha256": "ab862b7423adc1211efcba6fef6ea5c937b424e5eb9ff3baa642a6e8c691c0ef",
+      "frontend_source_tree_sha256": "c0130b35eedc2e62dac065f196896d47404cac081b69d47ada154dc2e50d46c8",
+      "source_snapshot_sha256": "7c24071c14990d16782c9eefe3bfdbb40b1cfd68269090b72e3503b6fb7a534e",
+      "manifest_sha256": "4d8ebb1a8759f1c9d651bfaf6f896c2e9edac391cc1e77fa04089512dc0923d8",
+      "zip": {
+        "path": "change-cascade-publish.zip",
+        "bytes": 98888,
+        "sha256": "0ef667c993e002b3d0311ab20d728d3f04e665a3d39d68356f81ba8257ca2262",
+        "crc_verified": true,
+        "all_entry_sha256_verified": true
+      },
+      "file_count": 61,
+      "sdk_tests": 32,
+      "frontend_tests": 60,
+      "review_status": "closed_final_metadata_reseal_verified"
+    },
+    {
+      "title": "DeficitDesk",
+      "path": "deficit-desk",
+      "contract_sha256": "1a92cbe7f2d98fe5890a4f0bd009933cc5e534e6d86dd5e20e27a4cddd7407ea",
+      "frontend_source_tree_sha256": "c0f13ae4b9f2effe4f778bc5d1be012478d54c9b11039256e1fde79b5a1b9e23",
+      "source_snapshot_sha256": "d0aa39bf839a0d4980b2a724ba7e813a3d98949284103dc5fac8ef7f4df3719b",
+      "manifest_sha256": "26d63cd7c27cb07cc2ef6650b501ab9589be180da358af8d8c7da7eca443e5bd",
+      "zip": {
+        "path": "deficit-desk-publish.zip",
+        "bytes": 98930,
+        "sha256": "e05dae273d5f76c399c517f691e76c1b5bf74472acdbaa8e423663e9d3180b93",
+        "crc_verified": true,
+        "all_entry_sha256_verified": true
+      },
+      "file_count": 58,
+      "sdk_tests": 35,
+      "frontend_tests": 57,
+      "review_status": "closed_final_metadata_reseal_verified"
+    }
+  ]
+}

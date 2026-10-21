@@ -1,0 +1,61 @@
+{
+  "peer_finding": "P2 valid Python label rejected by UTF16 length / JS trim boundary mismatch",
+  "reviewer": "/root/genlayer_contract_pair02",
+  "original_reviewed_zip_sha256": "4d5f170849c96033adfb5b90a795f5f68c24d33eec761b3d06d1596016c8e26d",
+  "original_candidate_preserved": "historical/pre-unicode-fix-change-cascade-publish.zip",
+  "root_peer_actual_sdk_narrow_evidence": "outputs/genlayer-builders-2026-10-21/peer-audits/profile08-unicode-label",
+  "author_red_logs": [
+    "unicode-regression-red.log (2 failed8 passed)",
+    "unicode-trim-regression-red.log (3 failed10 passed)"
+  ],
+  "fix": "Array.from(label).length counts Unicode codepoints; explicit Python str.strip whitespace boundary set preserves BOM and rejects U0085/U001C",
+  "final_frontend_tests": 60,
+  "checks": {
+    "frontend_tests": {
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "test"
+      ]
+    },
+    "typescript": {
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "exec",
+        "tsc",
+        "--noEmit"
+      ]
+    },
+    "vite_build": {
+      "exit_code": 0,
+      "passed": true,
+      "command": [
+        "exec",
+        "vite",
+        "build"
+      ]
+    }
+  },
+  "frontend_source_tree_sha256": "c0130b35eedc2e62dac065f196896d47404cac081b69d47ada154dc2e50d46c8",
+  "unchanged_protected_bytes": [
+    {
+      "path": "contract.py",
+      "bytes": 12237,
+      "sha256": "ab862b7423adc1211efcba6fef6ea5c937b424e5eb9ff3baa642a6e8c691c0ef"
+    },
+    {
+      "path": "fixtures/graph.json",
+      "bytes": 1284,
+      "sha256": "be2bb3dbb6356f98919c3c0aee53a445064cc317c75882a9d59605163e592ac1"
+    },
+    {
+      "path": "fixtures/source.json",
+      "bytes": 449,
+      "sha256": "a0fb22c1da2612ee5fd1159797bd99a2b366e4f191e1be2a0b49c6e945fb7587"
+    }
+  ],
+  "contract_suite_rerun": false,
+  "live_business_test": null,
+  "independent_fix_review": "closed by /root/genlayer_contract_pair02; actual production validateGraph narrow check and original exact-byte protected-source/archive checks"
+}

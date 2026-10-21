@@ -1,0 +1,52 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile08/projects/change-cascade/frontend
+
+ ❯ tests/domain.test.ts (13 tests | 3 failed) 41ms
+   ✓ groups mutual dependencies, stages prerequisites and propagates downstream impact 6ms
+   ✓ never walks prerequisites backwards when selecting a dependent 1ms
+   ✓ treats self loops as cyclic singleton atomic groups and uses ASCII ties 2ms
+   ✓ accepts isolated nodes with no edges but rejects duplicate or unknown endpoints 2ms
+   ✓ requires a complete bounded nonduplicate known selection 1ms
+   ✓ checks loaded chain results against its exact frozen selection and source 2ms
+   ✓ confirms only a derived result owned by the connected wallet 1ms
+   ✓ accepts 33 non-BMP codepoints under the contract label bound 0ms
+   ✓ accepts 64 non-BMP codepoints under the contract label bound 0ms
+   ✓ rejects65 Unicode codepoints even when every codepoint is non-BMP 0ms
+   × accepts contract-preserved BOM at both label ends 16ms
+     → Invalid node or duplicate ID.
+   × rejects Python strip boundary whitespace U+ 6ms
+     → expected [Function] to throw an error
+   × rejects Python strip boundary whitespace U+ 1ms
+     → expected [Function] to throw an error
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 10 passed (13)
+   Start at  07:42:47
+   Duration  1.04s (transform 99ms, setup 0ms, collect 110ms, tests 41ms, environment 0ms, prepare 370ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/domain.test.ts > accepts contract-preserved BOM at both label ends
+Error: Invalid node or duplicate ID.
+ ❯ validateGraph src/domain.ts:11:222
+
+ ❯ tests/domain.test.ts:15:96
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/domain.test.ts > rejects Python strip boundary whitespace U+
+ FAIL  tests/domain.test.ts > rejects Python strip boundary whitespace U+
+AssertionError: expected [Function] to throw an error
+
+- Expected: 
+null
+
++ Received: 
+undefined
+
+ ❯ tests/domain.test.ts:16:217
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+

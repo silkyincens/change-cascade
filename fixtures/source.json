@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "pii": false,
+  "license": "MIT",
+  "test_url": "https://raw.githubusercontent.com/fixture-lab/genlayer-profile08/0000000000000000000000000000000000000000/profile08/projects/change-cascade/fixtures/graph.json",
+  "public_url": null,
+  "sha256": "be2bb3dbb6356f98919c3c0aee53a445064cc317c75882a9d59605163e592ac1",
+  "publication": null,
+  "note": "Explicit test locator only. No publication or live deployment is claimed."
+}

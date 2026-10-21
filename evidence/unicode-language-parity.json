@@ -1,0 +1,8 @@
+{
+  "shared_python_reference_only_not_a_chain_test": true,
+  "BOM_boundary_preserved": true,
+  "U0085_boundary_removed": true,
+  "U001C_boundary_removed": true,
+  "non_BMP_33_codepoints": 33,
+  "non_BMP_64_codepoints": 64
+}

@@ -1,0 +1,110 @@
+$ vitest run
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile08/projects/change-cascade/frontend
+
+ ✓ tests/public-json.test.ts (2 tests) 15ms
+ ❯ tests/domain.test.ts (7 tests | 7 failed) 23ms
+   × groups mutual dependencies, stages prerequisites and propagates downstream impact 13ms
+     → domain not implemented
+   × never walks prerequisites backwards when selecting a dependent 1ms
+     → domain not implemented
+   × treats self loops as cyclic singleton atomic groups and uses ASCII ties 1ms
+     → domain not implemented
+   × accepts isolated nodes with no edges but rejects duplicate or unknown endpoints 1ms
+     → domain not implemented
+   × requires a complete bounded nonduplicate known selection 1ms
+     → domain not implemented
+   × checks loaded chain results against its exact frozen selection and source 1ms
+     → domain not implemented
+   × confirms only a derived result owned by the connected wallet 1ms
+     → domain not implemented
+ ✓ tests/context.test.ts (4 tests) 12ms
+ ✓ tests/wallet.test.ts (38 tests) 49ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 7 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/domain.test.ts > groups mutual dependencies, stages prerequisites and propagates downstream impact
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:4:108
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/7]⎯
+
+ FAIL  tests/domain.test.ts > never walks prerequisites backwards when selecting a dependent
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:5:82
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/7]⎯
+
+ FAIL  tests/domain.test.ts > treats self loops as cyclic singleton atomic groups and uses ASCII ties
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:6:91
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/7]⎯
+
+ FAIL  tests/domain.test.ts > accepts isolated nodes with no edges but rejects duplicate or unknown endpoints
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:7:105
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/7]⎯
+
+ FAIL  tests/domain.test.ts > requires a complete bounded nonduplicate known selection
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:8:76
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/7]⎯
+
+ FAIL  tests/domain.test.ts > checks loaded chain results against its exact frozen selection and source
+Error: domain not implemented
+ ❯ validateGraph src/domain.ts:1:57
+      1| export function validateGraph(..._args:any[]):any{throw Error('domain …
+       |                                                         ^
+      2| export function derive(..._args:any[]):any{throw Error('domain not imp…
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+ ❯ tests/domain.test.ts:9:93
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/7]⎯
+
+ FAIL  tests/domain.test.ts > confirms only a derived result owned by the connected wallet
+Error: domain not implemented
+ ❯ canConfirm src/domain.ts:5:54
+      3| export function selection(..._args:any[]):any{throw Error('domain not …
+      4| export function assertChainResult(..._args:any[]):any{throw Error('dom…
+      5| export function canConfirm(..._args:any[]):any{throw Error('domain not…
+       |                                                      ^
+      6| 
+ ❯ tests/domain.test.ts:10:139
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/7]⎯
+
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  7 failed | 44 passed (51)
+   Start at  07:11:45
+   Duration  3.03s (transform 543ms, setup 0ms, collect 1.85s, tests 99ms, environment 2ms, prepare 2.77s)
+
+[ELIFECYCLE] Test failed. See above for more details.

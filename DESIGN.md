@@ -1,0 +1,11 @@
+# ChangeCascade design and API
+
+Approved architectural direction; native local execution authorized by root on behalf of user.
+
+ChangeCascade inspects a complete fictional dependency graph, not Git ancestry, shortest paths, flow or SAT. Strict source schema graph-v1 is {schema,nodes,dependencies}; 1..12 unique ASCII node IDs, nonempty bounded labels, 0..40 unique dependent/prerequisite edges and all endpoints known. Self-dependency is allowed and makes a singleton cyclic. Source bytes are 1..32768 UTF-8 bytes, duplicate JSON keys/unknown fields reject. Every immutable raw GitHub URL must end in this project's own fixture namespace and carry a lowercase exact40hex commit and byteSHA.
+
+`lock_source(record_id,url,sha,seeds_json)` owner-locks the complete graph and 1..12 unique known selected node IDs. `derive(record_id,expected_revision)` independently re-fetches and revalidates exact source and computes canonical SCCs with sorted members, stable group IDs equal to minimum member, condensation edges prerequisite->dependent, maximal available prerequisite-first stage groups, and downstream impact closure containing the whole selected SCC. Equal order uses ASCII IDs. `confirm` re-fetches and fully recomputes once more, binds chain/contract/owner/record/source/selection/revision/operation and certificate. `revoke` is terminal; `get_record` is a dict. `preview_impact(record_id,seeds_json)` is a dict local-to-chain view over the immutable source.
+
+The UI distinguishes loaded immutable selection/result from editable local impact preview, draws dependency cycles and impact, and explains staged atomic review groups. No change is executed.
+
+Both source/dict-view and caller boundaries use actual GenVM v0.2.12 pinned runner. Shared reviewed transport code may be reused as generic wallet plumbing, while all domain algorithms/UI remain original. Actual SDK helper/viem compatibility, raw samehash/sender/target/value0/FINALIZED/NORMAL/leader_onlyfalse/MAJORITY_AGREE/uniqueleaderSUCCESS, every supplied SDK field conflict, unknown-before-submit/session/nohash recovery and busy/epoch/visible-ID action checks are required. No fabricated normalized SDK fields. All public URLs/deployment/hosting/live/users/financing/award/visual flags remain null. Root alone owns external actions.

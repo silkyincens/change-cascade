@@ -1,0 +1,14 @@
+$ vitest run
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile08/projects/change-cascade/frontend
+
+ ✓ tests/context.test.ts (4 tests) 11ms
+ ✓ tests/domain.test.ts (7 tests) 29ms
+ ✓ tests/public-json.test.ts (2 tests) 16ms
+ ✓ tests/wallet.test.ts (38 tests) 46ms
+
+ Test Files  4 passed (4)
+      Tests  51 passed (51)
+   Start at  07:13:14
+   Duration  3.06s (transform 594ms, setup 0ms, collect 2.13s, tests 103ms, environment 2ms, prepare 2.38s)
+

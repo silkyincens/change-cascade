@@ -1,0 +1,34 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile08/projects/change-cascade/frontend
+
+ ❯ tests/domain.test.ts (10 tests | 2 failed) 25ms
+   ✓ groups mutual dependencies, stages prerequisites and propagates downstream impact 6ms
+   ✓ never walks prerequisites backwards when selecting a dependent 1ms
+   ✓ treats self loops as cyclic singleton atomic groups and uses ASCII ties 2ms
+   ✓ accepts isolated nodes with no edges but rejects duplicate or unknown endpoints 2ms
+   ✓ requires a complete bounded nonduplicate known selection 1ms
+   ✓ checks loaded chain results against its exact frozen selection and source 2ms
+   ✓ confirms only a derived result owned by the connected wallet 1ms
+   × accepts 33 non-BMP codepoints under the contract label bound 8ms
+     → Invalid node or duplicate ID.
+   × accepts 64 non-BMP codepoints under the contract label bound 1ms
+     → Invalid node or duplicate ID.
+   ✓ rejects65 Unicode codepoints even when every codepoint is non-BMP 0ms
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 8 passed (10)
+   Start at  07:40:33
+   Duration  974ms (transform 83ms, setup 0ms, collect 97ms, tests 25ms, environment 0ms, prepare 369ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/domain.test.ts > accepts 33 non-BMP codepoints under the contract label bound
+ FAIL  tests/domain.test.ts > accepts 64 non-BMP codepoints under the contract label bound
+Error: Invalid node or duplicate ID.
+ ❯ validateGraph src/domain.ts:11:210
+
+ ❯ tests/domain.test.ts:12:129
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+

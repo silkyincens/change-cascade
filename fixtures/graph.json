@@ -1,0 +1,71 @@
+{
+  "schema": "ChangeCascade-graph-v1",
+  "nodes": [
+    {
+      "id": "api",
+      "label": "Api synthetic component"
+    },
+    {
+      "id": "archive",
+      "label": "Archive synthetic component"
+    },
+    {
+      "id": "auth",
+      "label": "Auth synthetic component"
+    },
+    {
+      "id": "cache",
+      "label": "Cache synthetic component"
+    },
+    {
+      "id": "dashboard",
+      "label": "Dashboard synthetic component"
+    },
+    {
+      "id": "ingest",
+      "label": "Ingest synthetic component"
+    },
+    {
+      "id": "secrets",
+      "label": "Secrets synthetic component"
+    },
+    {
+      "id": "theme",
+      "label": "Theme synthetic component"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependent": "api",
+      "prerequisite": "auth"
+    },
+    {
+      "dependent": "api",
+      "prerequisite": "cache"
+    },
+    {
+      "dependent": "cache",
+      "prerequisite": "api"
+    },
+    {
+      "dependent": "auth",
+      "prerequisite": "secrets"
+    },
+    {
+      "dependent": "dashboard",
+      "prerequisite": "api"
+    },
+    {
+      "dependent": "dashboard",
+      "prerequisite": "theme"
+    },
+    {
+      "dependent": "archive",
+      "prerequisite": "ingest"
+    },
+    {
+      "dependent": "ingest",
+      "prerequisite": "archive"
+    }
+  ]
+}

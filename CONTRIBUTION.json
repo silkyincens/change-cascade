@@ -1,0 +1,40 @@
+{
+  "id": "change-cascade",
+  "title": "ChangeCascade",
+  "profile": "profile08",
+  "category": "Project",
+  "summary": "Canonical dependency cycles, prerequisite stages and downstream impact closure for fictional staged changes.",
+  "originality": "Original domain contract/algorithms and domain UI; shared generic MIT transport utilities disclosed. Not a renamed existing IC.",
+  "license": "MIT",
+  "contract_path": "contract.py",
+  "contract_sha256": "ab862b7423adc1211efcba6fef6ea5c937b424e5eb9ff3baa642a6e8c691c0ef",
+  "constructor_args": [],
+  "fixture": {
+    "path": "fixtures/graph.json",
+    "sha256": "be2bb3dbb6356f98919c3c0aee53a445064cc317c75882a9d59605163e592ac1",
+    "synthetic": true,
+    "pii": false,
+    "test_url": "https://raw.githubusercontent.com/fixture-lab/genlayer-profile08/0000000000000000000000000000000000000000/profile08/projects/change-cascade/fixtures/graph.json",
+    "public_url": null
+  },
+  "local_sdk_tests": 32,
+  "local_frontend_tests": 60,
+  "independent_review": {
+    "reviewer": "/root/genlayer_contract_pair02",
+    "recorded_by": "/root/genlayer_projects05",
+    "status": "independent_source_review_closed_after_fix",
+    "remaining_important_or_critical_findings": 0,
+    "evidence": "evidence/independent-review.json"
+  },
+  "deployment": null,
+  "publication": null,
+  "hosting": null,
+  "live_wallet_business_flow": null,
+  "browser_visual_review": null,
+  "actual_users": null,
+  "financing": null,
+  "awards": null,
+  "contract_counted_separately_as_ic": false,
+  "ai_assisted": true,
+  "prototype": true
+}
